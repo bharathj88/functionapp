@@ -16,9 +16,9 @@ namespace Songs.Function
         }
 
         [FunctionName("youtubeupdate")]
-        public void Run([BlobTrigger("")]Stream myBlob, string name,Uri uri, ILogger log)
+        public void Run(ILogger log)
         {
-            log.LogInformation($"C# Blob trigger function Processed blob\n Name:{name} \n Size: {myBlob.Length} Bytes");
+            
             // Example: Add a new song to the database
             var song = new Song
             {

@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+// Removed invalid using directive for Microsoft.EntityFrameworkCore.Relational
 
 public class YourDbContext : DbContext
 {
