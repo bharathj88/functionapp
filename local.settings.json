@@ -4,6 +4,6 @@
     "AzureWebJobsStorage": "",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet",
     "1ffab7_STORAGE": "UseDevelopmentStorage=true",
-    "SqlConnectionString": "Server=tcp:youtubesongs.database.windows.net,1433;Initial Catalog=youtubesongs;Persist Security Info=False;User ID=bharathj88;Password=Murugan2110$;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+    "SqlConnectionString": "Server=tcp:youtubesongs.database.windows.net,1433;Initial Catalog=youtubesongs;Persist Security Info=False;User ID=;Password=;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   }
 }
