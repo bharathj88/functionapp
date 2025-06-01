@@ -12,7 +12,10 @@ namespace Songs.Function
         public void Configure(IWebJobsBuilder builder)
         {
             builder.Services.AddDbContext<YourDbContext>(options =>
-                options.UseSqlServer(Environment.GetEnvironmentVariable("SqlConnectionString")));
+                options.UseSqlServer(
+                    Environment.GetEnvironmentVariable("SqlConnectionString"),
+                    sqlOptions => sqlOptions.EnableRetryOnFailure())
+            );
         }
     }
 }
